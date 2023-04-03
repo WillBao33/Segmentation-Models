@@ -1,0 +1,17 @@
+Resnet152:
+Train: dice_loss - 0.006173, iou_score - 0.9899
+Val: dice_loss - 0.005788, iou_score - 0.9903
+
+Resnet152 with filtered training image and unfiltered training image
+train: 100%|█| 508/508 [02:16<00:00,  3.72it/s, dice_loss - 0.003985, iou_score 
+valid: 100%|█████| 63/63 [00:05<00:00, 10.61it/s, dice_loss - 0.02116, iou_score - 0.9595]
+
+deeplabv3+ with resnet152 pretrained encoder. training images are resized to 560 x 1168, batch size is 2. validation images size stays the same after padding.
+train: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 254/254 [00:53<00:00,  4.74it/s, dice_loss - 0.01736, iou_score - 0.9713]
+valid: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:05<00:00,  6.33it/s, dice_loss - 0.02174, iou_score - 0.9631]
+
+
+deeplabv3+ with resent 152 pretrained encoder. training and val images are resized to 560 x 1168, batch size is 2. 
+train: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 254/254 [00:49<00:00,  5.17it/s, dice_loss - 0.02067, iou_score - 0.9627]
+valid: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:02<00:00, 11.77it/s, dice_loss - 0.02066, iou_score - 0.9631]
+
